@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaUser, FaLock, FaArrowRight } from 'react-icons/fa';
 
 const Login = () => {
@@ -26,20 +27,14 @@ const Login = () => {
             />
           </div>
           <div className="flex justify-between items-center">
-            <a
-              href="#"
+            <Link
+              to="/signup"
               className="text-sm text-white hover:text-yellow-300 transition duration-300"
             >
-              Forgot password?
-            </a>
-            <a
-              href="#"
-              className="text-sm text-white hover:text-yellow-300 transition duration-300"
-            >
-              Create account
-            </a>
+               Don't have an account? Sign up
+            </Link>
           </div>
-          <button className="w-full py-3 bg-yellow-400 text-gray-800 font-bold rounded-lg shadow-md hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-300 transition duration-300 flex items-center justify-center space-x-2">
+          <button type="submit" className="w-full py-3 bg-yellow-400 text-gray-800 font-bold rounded-lg shadow-md hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-300 transition duration-300 flex items-center justify-center space-x-2">
             <span>Login</span>
             <FaArrowRight />
           </button>

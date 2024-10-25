@@ -17,10 +17,10 @@ const Conversation = () => {
 				<div className='flex flex-col flex-1'>
 					<div className='flex justify-between items-center'>
 						<p className='font-bold text-gray-200 text-lg'>John Doe</p>
-						<span className='text-xl' role='img' aria-label='emoji'>🎃</span>
+						
 					</div>
 					{/* You can add a status message or timestamp here */}
-					<p className='text-gray-400 text-sm'>Last message preview or timestamp</p>
+					<p className='text-black-400 text-sm'>Last message preview or timestamp</p>
 				</div>
 			</div>
 

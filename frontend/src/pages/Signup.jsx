@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaUser, FaLock, FaArrowRight } from 'react-icons/fa';
 import GenderCheckbox from './GenderCheckBox';
 
@@ -50,14 +51,14 @@ const Signup = () => {
 						<GenderCheckbox />
 					</div>
 					<div className="flex justify-between items-center">
-						<a
-							href="/login"
+						<Link
+							to="/login"
 							className="text-sm text-white hover:text-yellow-300 transition duration-300"
 						>
-							Already have an account?
-						</a>
+							Already have an account? Login
+						</Link>
 					</div>
-					<button className="w-full py-3 bg-yellow-400 text-gray-800 font-bold rounded-lg shadow-md hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-300 transition duration-300 flex items-center justify-center space-x-2">
+					<button type="submit" className="w-full py-3 bg-yellow-400 text-gray-800 font-bold rounded-lg shadow-md hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-300 transition duration-300 flex items-center justify-center space-x-2">
 						<span>Sign Up</span>
 						<FaArrowRight />
 					</button>
